@@ -1,16 +1,19 @@
 "use client";
-import links from "@/helper/links";
 import Link from "next/link";
 
-interface Props {
+interface LinksProps {
   title: string;
   to: string;
 }
 
-export default function ViewLinks() {
+interface Props {
+  data: LinksProps[];
+}
+
+export default function ViewLinks({ data }: Props) {
   return (
     <ul id="article-list">
-      {links.map((link: Props, index: number) => {
+      {data.map((link: LinksProps, index: number) => {
         return (
           <li key={index}>
             <Link

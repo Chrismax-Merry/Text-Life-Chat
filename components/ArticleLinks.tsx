@@ -26,8 +26,8 @@ export default function ArticleLinks() {
             </Link>
             <p className="text-right text-xs">
               {post?.labels?.map((label: string, ind: number) => (
-                <span className="mx-1" key={ind}>
-                  #{label}
+                <span className="mx-1 text-[#666]" key={ind}>
+                  {label}
                 </span>
               ))}
             </p>
