@@ -16,7 +16,7 @@ export const generateMetadata = async ({
     (doc) => doc.slug === decodeURIComponent(params.slug)
   );
   return {
-    title: `${doc?.title} | 時々、鹿を見かける`,
+    title: `${doc?.title} | 书谱`,
     description: doc?.description,
     keywords: doc?.labels.join(","),
   };
