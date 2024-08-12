@@ -16,7 +16,7 @@ export const generateMetadata = async ({
     (doc) => doc.slug === decodeURIComponent(params.slug)
   );
   return {
-    title: `${doc?.title} | 书谱`,
+    title: `${doc?.title} | 杂谈`,
     description: doc?.description,
     keywords: doc?.labels.join(","),
   };
@@ -38,9 +38,9 @@ export default function PostLayout({ params }: { params: { slug: string } }) {
           <span className="text-slate-800">»</span>&nbsp;
           <span>{doc.title}</span>
         </div>
-        <h2 className="my-6 text-[1.8em] border-b-[1px] border-dashed border-[#ddd] pb-3 text-center">
+        <div className="my-6 text-[1.8em] border-b-[1px] border-dashed border-[#ddd] pb-3 text-center">
           {doc.title}
-        </h2>
+        </div>
         <MDX code={doc.body.code} />
         <div className="text-right text-sm text-blue-600 mt-4">
           {doc.labels.map((label) => (

@@ -6,7 +6,7 @@ import "@/styles/index.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "书谱 | 文字艺术",
+  title: "杂谈 | 文字艺术",
   authors: [{ name: "Chrismax Merry", url: "https://liucy.cn" }],
   keywords: "Text, Blog, Chat, ACG",
   description: "树深时见鹿，溪午不闻钟。",
