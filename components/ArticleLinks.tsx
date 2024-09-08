@@ -19,8 +19,8 @@ export default function ArticleLinks() {
         return (
           <li key={index}>
             <Link href={post.url} className="text-sm">
-              <span className="mr-3 text-[#666] inline-block w-[90px]">
-                {format(new Date(post.created_at), "yyyy-MM-dd")}
+              <span className="mr-3 text-[#666] inline-block w-[90px] align-middle">
+                {format(new Date(post.created_at), "yyyy/MM/dd")}
               </span>
               <span className="text-[#333] hover:text-[#0078E7]">
                 {post.title}

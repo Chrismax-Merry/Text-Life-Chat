@@ -40,4 +40,23 @@
         left: -32px;
         background-color: #f27c8d;
     }
+
+    .prose blockquote {
+        font-style: normal;
+        border-left: 3px solid #333333;
+        background-color: #f7f7f7;
+        padding: 9px 9px 9px 15px;
+    }
+
+    .prose blockquote p:first-child::before,
+    .prose blockquote p:last-child::after {
+        content: "";
+    }
+
+    .prose blockquote p{
+        padding: 0;
+        margin: 0;
+        line-height: 2;
+        text-indent: 2em;
+    }
 }
